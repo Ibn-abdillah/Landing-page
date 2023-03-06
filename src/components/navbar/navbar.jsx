@@ -4,11 +4,11 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { FaTimes } from 'react-icons/fa'
 
 import './navbar.css'
-import { click } from '@testing-library/user-event/dist/click'
 
 function Navbar() {
   const [open, setOpen] = useState(false)
   const clickHandler = () => setOpen(!open)
+  const close = () => setOpen(false)
 
   return (
     <div className='nav-container'>
@@ -18,11 +18,11 @@ function Navbar() {
         </div>
 
         <ul className={open ? 'nav-menu active' : 'nav-menu'}>
-         <li><a href="#">Pricing</a></li>
-         <li><a href="#">Product</a></li>
-         <li><a href="#">About Us</a></li>
-         <li><a href="#">Careers</a></li>
-         <li><a href="#">Community</a></li>
+         <li><a href="#" onClick={close}>Pricing</a></li>
+         <li><a href="#" onClick={close}>Product</a></li>
+         <li><a href="#" onClick={close}>About Us</a></li>
+         <li><a href="#" onClick={close}>Careers</a></li>
+         <li><a href="#" onClick={close}>Community</a></li>
         </ul>
 
         <button>Get Started</button>

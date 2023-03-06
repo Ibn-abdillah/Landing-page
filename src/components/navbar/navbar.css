@@ -7,7 +7,6 @@
 .nav-container{
     padding: 20px 3rem;
     width: 100%;
-    position: fixed;
 }
 
 .nav-content{
@@ -53,6 +52,8 @@ button:hover{
     color: #000;
     cursor: pointer;
     display: none;
+    position: fixed;
+    right: 3rem;
 }
 
 @media screen and (max-width: 750px) {

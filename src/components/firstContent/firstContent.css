@@ -5,12 +5,13 @@
 }
 
 .row-one{
-    padding: 150px 3rem 0;
+    padding: 0px 3rem 0;
 }
 
 .row-one .content{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -47,7 +48,16 @@
     }
 
     .row-one .col-1{
+        margin: auto;
         margin-top: 30px;
         text-align: center;
+    }
+
+    .row-one .col-2{
+        margin: auto;
+    }
+
+    .row-one img{
+        width: 100%;
     }
 }
